@@ -21,13 +21,13 @@ function ChatbotComponent() {
 
   return (
     <div className="chatbot-container">
-    <h1 className='h1'>Enter Into Student Info System</h1>
+    <h2 className='h2'>Enter Into Student Info System</h2>
     <button className='button' onClick={startChatbot}>Enroll Now !</button>
      {chatbotVisible && 
-     <>
+     <div>
      <Chatbot config={config} messageParser={MessageParser} actionProvider={ActionProvider} />
     {/* <UserInput onSubmit={handleUserInput} /> */}
-     </> 
+     </div> 
      }
      </div>
   );
